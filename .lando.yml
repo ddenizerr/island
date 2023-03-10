@@ -1,0 +1,13 @@
+name: island
+recipe: symfony #database name, user-name and password
+config:
+  php: '8.1'
+  via: nginx
+  webroot: public
+  database: mariadb
+  xdebug: false
+services:
+  database: ##container name
+    portforward: 5656
+
+    #when a recipe is used, un and pwd is the recipe name
